@@ -9,14 +9,14 @@ pipeline {  // must be the top level
     
     agent { // where to execute
         docker {
-            image 'nexus.muc.ssdn.accounts.intern:40100/katalonstudio/katalon'
+            image 'katalonstudio/katalon'
         }
     }
 
     // Access tools for your project
     // Gradle, maven, and JDK supported for now
     tools {
-        maven 'Maven' // Needs to be defined in Jenkins GUI
+        //maven 'Maven' // Needs to be defined in Jenkins GUI
     }
 
     /* Parameterized your build, types of parameters supported
@@ -31,7 +31,7 @@ pipeline {  // must be the top level
 
     environment {
         NEW_VERSION = '1.3.0'
-        SERVER_CREDENTIALS = credentials('server-credentials')
+        //SERVER_CREDENTIALS = credentials('server-credentials')
     }
 
     stages { // where the work happens, stage and steps
@@ -84,13 +84,16 @@ pipeline {  // must be the top level
 
     post {
         always {
-            // always performed 
+            // always performed
+            echo 'post-always'
         }
         success {
             // performed after all stages are completed successfully
+            echo 'post success'
         }
         failure {
             // performed if any stage failed
+            echo 'post failure'
         }
     }
 } 
@@ -98,6 +101,6 @@ pipeline {  // must be the top level
 
 /* Using credentials in Jenkinsfile
     1. Define credentials in Jenkins GUI
-    2. "credentials("credentialid")" bind the credentials to your environmnet variable
+    2. "credentials("credential-id")" bind the credentials to your environment variable
     3. For that you need "Credentials Binding" Plugin
 */
