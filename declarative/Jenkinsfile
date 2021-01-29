@@ -15,9 +15,9 @@ pipeline {  // must be the top level
 
     // Access tools for your project
     // Gradle, maven, and JDK supported for now
-    tools {
+/*     tools {
         //maven 'Maven' // Needs to be defined in Jenkins GUI
-    }
+    } */
 
     /* Parameterized your build, types of parameters supported
         - string (name, defaultValue, description)
