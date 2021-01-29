@@ -1,0 +1,8 @@
+// Scripted pipeline
+
+// Advanced scripting capabilities, high flexibility
+// Difficult to start
+
+node {
+    // groovy script
+}
