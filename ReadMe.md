@@ -40,4 +40,4 @@ If you are behind a proxy or having trouble installing plugins you can try below
 
 ## Katalon jobs with docker
 
-See [here](../Katalon.md) for running Katalon test. Information can be used to create Jenkins job.
+See [here](../master/Katalon.md) for running Katalon test. Information can be used to create Jenkins job.

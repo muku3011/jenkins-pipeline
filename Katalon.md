@@ -7,7 +7,7 @@
 ```
 
 ```shell
--reportFloder="Reports" -reportFileName="report" -retry=0 -testSuitePath="Test Suites/Authentication - Authorization TS" -browserType="Chrome"
+-reportFloder="Reports" -reportFileName="report" -retry=0 -testSuitePath="Test Suites/<TEST-SUITE-NAME>" -browserType="Chrome"
 ```
 
 ## Running katalon test inside Docker
