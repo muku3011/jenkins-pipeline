@@ -3,6 +3,7 @@
     - Easier to get started, but not that powerful
 */
 
+// Global variable
 def gv
 
 pipeline {  // must be the top level
@@ -24,9 +25,9 @@ pipeline {  // must be the top level
         - choice (name, choices, description)
     */    
     parameters {
-        string(name: 'VERSION', defaultValue: '', description: 'version to deploy in production')
-        choice(name: 'VERSION', choices: ['','',''], description: '')
-        booleanParam(name: 'executeTest', defaultValue: true, description: '')
+        //string(name: 'VERSION', defaultValue: '', description: 'version to deploy in production')
+        choice(name: 'buildType', choices: ['Backend Project Changes','Katalon Project Changes'], description: 'Request from katalon or backend project')
+        booleanParam(name: 'executeTest', defaultValue: true, description: 'Need to execute test ?')
     }
 
     environment {
@@ -43,12 +44,11 @@ pipeline {  // must be the top level
             }
         }
 
-
         stage('build') {
 
             when {  // pre-condition for step
                 expression {
-                    BRANCH_NAME == 'dev'
+                    BRANCH_NAME == 'master'
                 }
             }
 
