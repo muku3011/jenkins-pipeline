@@ -19,24 +19,30 @@ If you are behind a proxy or having trouble installing plugins you can try below
 4. Above configuration can also be updated inside Manage Jenkins-> Manage Plugins -> Advanced -> Update Site
 
 ### List of suggested plugins:
-1. Folders
-2. OWASP Markup Formatter
-3. Build Timeout
-4. Credentials Binding
-5. Timestamper
-6. Workspace Cleanup
-7. Ant
-8. Gradle
-9. Pipeline
-10. Pipeline: GitHub Groovy Libraries
-11. Pipeline: Stage View Git 
-12. SSH Build Agents
-13. GitHub Branch Source 
-14. Matrix Authorization Strategy
-15. PAM Authentication
-16. LDAP
-17. Email Extension
-18. Mailer
+
+<details>
+  <summary>Click to expand!</summary>
+
+    1. Folders
+    2. OWASP Markup Formatter
+    3. Build Timeout
+    4. Credentials Binding
+    5. Timestamper
+    6. Workspace Cleanup
+    7. Ant
+    8. Gradle
+    9. Pipeline
+    10. Pipeline: GitHub Groovy Libraries
+    11. Pipeline: Stage View Git
+    12. SSH Build Agents
+    13. GitHub Branch Source
+    14. Matrix Authorization Strategy
+    15. PAM Authentication
+    16. LDAP
+    17. Email Extension
+    18. Mailer
+
+</details>
 
 ## Katalon jobs with docker
 
